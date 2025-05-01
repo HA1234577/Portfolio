@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafsa Arshad Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    nav button {
+      border: 1px solid white;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    nav button:hover {
+      background: white;
+      color: black;
+    }
+    .hero, .section, .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2, .section h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .hero p, .section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
+      animation-delay: 0.5s;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      padding: 40px 20px;
+      background: #111;
+      margin-top: 40px;
+    }
+    footer .footer-links {
+      margin: 20px 0;
+    }
+    footer .footer-links a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    footer .footer-links a:hover {
+      color: #00ff99;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .section img{
+        border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1 style="font-size: 1.5rem; font-weight: bold;">Portfolio</h1>
+    <button>Contact</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>I'm Hafsa Arshad</h2>
+    <p>I am a Software Engineer passionate about building efficient solutions.  
+        Skilled in Java, C++, and also experienced as a creative Content Writer.
+        </p>
+  </section>
+  
+  <!-- About Section -->
+  <section class="section">
+      <img src="img.jpg" alt="">
+    <h2>About Me</h2>
+    <p>I am passionate about creating both technical and creative solutions. As a Software Engineer and Content Writer, I aim to blend code with creativity to deliver the best results.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="portfolio">
+      <div class="card">
+        <h3>Content Writing Project</h3>
+        <p>Professional articles and blogs written for various clients across different industries.</p>
+      </div>
+      <div class="card">
+        <h3>C++ Restaurant Management System</h3>
+        <p>A console-based system to manage restaurant orders, billing, and menu updates efficiently.</p>
+      </div>
+      <div class="card">
+        <h3>Java Student Management System</h3>
+        <p>A Java application to manage student records, grades, and course enrollments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">Contact</a>
+    </div>
+    © 2025 Hafsa Arshad Portfolio. All rights reserved.
+  </footer>
+
+  <script>
+    // Simple scroll animation
+    const sections = document.querySelectorAll('.section');
+
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.querySelector('h2').style.animation = 'fadeInUp 0.8s forwards';
+          section.querySelector('p').style.animation = 'fadeIn 0.8s forwards';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
