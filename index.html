@@ -106,14 +106,303 @@
     .section img{
         border-radius: 50%;
     }
+    /* From Uiverse.io by Pradeepsaranbishnoi */ 
+.🤚 {
+  --skin-color: #E4C560;
+  --tap-speed: 0.6s;
+  --tap-stagger: 0.1s;
+  position: relative;
+  width: 80px;
+  height: 60px;
+  margin-left: 80px;
+}
+
+.🤚:before {
+  content: '';
+  display: block;
+  width: 180%;
+  height: 75%;
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  background-color: black;
+  border-radius: 40px 10px;
+  filter: blur(10px);
+  opacity: 0.3;
+}
+
+.🌴 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--skin-color);
+  border-radius: 10px 40px;
+}
+
+.👍 {
+  position: absolute;
+  width: 120%;
+  height: 38px;
+  background-color: var(--skin-color);
+  bottom: -18%;
+  right: 1%;
+  transform-origin: calc(100% - 20px) 20px;
+  transform: rotate(-20deg);
+  border-radius: 30px 20px 20px 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.👍:after {
+  width: 20%;
+  height: 60%;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: -8%;
+  left: 5px;
+  border-radius: 60% 10% 10% 30%;
+  border-right: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.👉 {
+  position: absolute;
+  width: 80%;
+  height: 35px;
+  background-color: var(--skin-color);
+  bottom: 32%;
+  right: 64%;
+  transform-origin: 100% 20px;
+  animation-duration: calc(var(--tap-speed) * 2);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform: rotate(10deg);
+}
+
+.👉:before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 30px;
+  background-color: var(--skin-color);
+  bottom: 8%;
+  right: 65%;
+  transform-origin: calc(100% - 20px) 20px;
+  transform: rotate(-60deg);
+  border-radius: 20px;
+}
+
+.👉:nth-child(1) {
+  animation-delay: 0;
+  filter: brightness(70%);
+  animation-name: tap-upper-1;
+}
+
+.👉:nth-child(2) {
+  animation-delay: var(--tap-stagger);
+  filter: brightness(80%);
+  animation-name: tap-upper-2;
+}
+.cent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+/* About Section Styling */
+.section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00ff99;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.section p, .section ul {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+  animation-delay: 0.5s;
+}
+
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #00ff99;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adding a background color to the section for contrast */
+.section {
+  background: #222;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section p strong {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+
+.👉:nth-child(3) {
+  animation-delay: calc(var(--tap-stagger) * 2);
+  filter: brightness(90%);
+  animation-name: tap-upper-3;
+}
+/* Section Styling */
+.section {
+  margin: 40px 0;
+}
+
+/* Experience Section Styling */
+.experience-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ff99;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #00ff99;
+}
+
+.experience-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-section ul li {
+  background-color: #1e1e1e;
+  color: #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.experience-section ul li:hover {
+  transform: translateY(-5px);
+}
+
+.experience-section ul li strong {
+  color:#00ff99;
+  font-size: 18px;
+}
+
+.👉:nth-child(4) {
+  animation-delay: calc(var(--tap-stagger) * 3);
+  filter: brightness(100%);
+  animation-name: tap-upper-4;
+}
+
+@keyframes tap-upper-1 {
+  0%, 50%, 100% {
+    transform: rotate(10deg) scale(0.4);
+  }
+
+  40% {
+    transform: rotate(50deg) scale(0.4);
+  }
+}
+
+@keyframes tap-upper-2 {
+  0%, 50%, 100% {
+    transform: rotate(10deg) scale(0.6);
+  }
+
+  40% {
+    transform: rotate(50deg) scale(0.6);
+  }
+}
+
+@keyframes tap-upper-3 {
+  0%, 50%, 100% {
+    transform: rotate(10deg) scale(0.8);
+  }
+
+  40% {
+    transform: rotate(50deg) scale(0.8);
+  }
+}
+
+@keyframes tap-upper-4 {
+  0%, 50%, 100% {
+    transform: rotate(10deg) scale(1);
+  }
+
+  40% {
+    transform: rotate(50deg) scale(1);
+  }
+}
+
   </style>
 </head>
 <body>
+  <div class="cent" id="cent">
+<!-- From Uiverse.io by Pradeepsaranbishnoi --> 
+<div class="🤚">
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="👉"></div>
+	<div class="🌴"></div>		
+	<div class="👍"></div>
+</div>
+</div>
 
   <!-- Navbar -->
+  <div class="bodyall">
   <nav>
-    <h1 style="font-size: 1.5rem; font-weight: bold;">Portfolio</h1>
-    <button>Contact</button>
+    <h1 style="font-size: 1.5rem; font-weight: bold; color: #00ff99;">Portfolio</h1>
+    <button href="cont">Contact</button>
   </nav>
 
   <!-- Hero Section -->
@@ -125,11 +414,36 @@
   </section>
   
   <!-- About Section -->
-  <section class="section">
-      <img src="img.jpg" alt="">
-    <h2>About Me</h2>
-    <p>I am passionate about creating both technical and creative solutions. As a Software Engineer and Content Writer, I aim to blend code with creativity to deliver the best results.</p>
-  </section>
+<!-- About Section -->
+<section class="section">
+  <img src="img.jpg" alt="Hafsa Arshad">
+  <h2>About Me</h2>
+  
+  <p> A highly motivated and bright student with a strong grasp of computer science concepts. Skilled in explaining complex topics in a clear and engaging manner. Passionate about teaching and helping others understand technical subjects. Eager to contribute my knowledge and continue learning in a dynamic environment.</p>
+  <h3>Education</h3>
+  <ul>
+    <li><strong>BS Software Engineering</strong> (Current CGPA: 3.55), National University of Modern Languages</li>
+    <li><strong>FSc (Pre-Engineering)</strong> (Percentage: 68%), Islamabad Model College for Girls F7/2</li>
+    <li><strong>Matric (Computer Science)</strong> (Percentage: 96%), Al Raza Public School</li>
+  </ul>
+  <h3>Relevant Coursework</h3>
+  <ul>
+    <li>Strategic Management</li>
+    <li>Team Leading Qualities</li>
+    <li>Operations Management</li>
+    <li>Content Writer</li>
+  </ul>
+  <h3>Technical Skills</h3>
+  <ul>
+    <li>Transcribing</li>
+    <li>Content Writing</li>
+    <li>Communication Skills</li>
+    <li>Programming Languages: HTML, CSS, C++, C, Java</li>
+    <li>Teaching</li>
+    <li>Ongoing course by Harvard University (CS50)</li>
+  </ul>
+</section>
+
 
   <!-- Portfolio Section -->
   <section class="section">
@@ -149,18 +463,40 @@
       </div>
     </div>
   </section>
+  <section class="section experience-section">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Freelance Content Writer</strong> — 2022 - Present <br>
+        Worked with various clients to deliver engaging and well-researched content. Specialized in creating articles, blog posts, and academic materials.
+      </li>
+      <li>
+        <strong>Transcriptionist</strong> — 2023 - Present <br>
+        Provided accurate transcription services for lectures, interviews, and meetings, ensuring high quality and timely delivery.
+      </li>
+      <li>
+        <strong>Volunteer Teaching Assistant</strong> — Summer 2023 <br>
+        Assisted in teaching basic computer science concepts to high school students. Focused on making technical topics simple and understandable.
+      </li>
+      <li>
+        <strong>Online Tutor (Part-time)</strong> — 2024 <br>
+        Taught computer basics, C++, and HTML/CSS to beginners via online platforms. Received positive feedback for clear and effective teaching methods.
+      </li>
+    </ul>
+  </section>
+  
 
   <!-- Footer -->
   <footer>
     <div class="footer-links">
       <a href="#">LinkedIn</a>
-      <a href="#">Email</a>
+      <a href="#"> hafsa2004arshad@gmail.com</a>
       <a href="#">GitHub</a>
-      <a href="#">Contact</a>
+      <a href="#" id="cont">Contact : 0335-7797711</a>
     </div>
     © 2025 Hafsa Arshad Portfolio. All rights reserved.
   </footer>
-
+</div>
   <script>
     // Simple scroll animation
     const sections = document.querySelectorAll('.section');
@@ -174,6 +510,23 @@
         }
       });
     });
+    let pl=document.getElementsByClassName('cent')[0];
+let bodyall=document.getElementsByClassName('bodyall')[0];
+
+let p1= new Promise((resolve,reject)=>{
+
+    resolve(56);
+})
+p1.then((value)=>{
+    bodyall.style.display="none"
+})
+p1.then((value)=>{
+    setTimeout(()=>{
+         bodyall.style.display="block"
+         pl.style.display="none";
+         cent.style.display="none";
+    },5000)
+})
   </script>
 
 </body>
